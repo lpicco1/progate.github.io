@@ -1,0 +1,148 @@
+body {
+    background-color: #000000;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 35;
+    color: rgba(255, 228, 196, 0.776);    
+}
+
+h2 {
+    text-align: center;
+    color: rgba(255, 228, 196, 0.776);
+
+}
+h3 {
+    text-align: center;
+    color: rgba(255, 228, 196, 0.776)
+}
+
+p {
+    text-align: center;
+    color: rgba(255, 228, 196, 0.776)
+}
+label {
+    color: rgba(255, 228, 196, 0.776)
+}
+
+
+    /* Set up the container and image styles */
+    .Imagecontainer1 {
+      align-self: center;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2px;
+    }
+
+    .image-container {
+      align-self: center;
+      position: relative;
+      width: auto;
+      height: 200px;
+      overflow: hidden;
+      margin: 5x;
+    }
+
+    .image-container img {
+    text-align: center;
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    /* Define the animations for swooping in */
+    @keyframes swoop-in-left {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes swoop-in-right {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+        /* Apply the animations to the images */
+        .image-container:nth-child(odd) img {
+            animation: swoop-in-left 1s forwards;
+          }
+      
+          .image-container:nth-child(even) img {
+            animation: swoop-in-right 1s forwards;
+          }
+
+          .container {
+            width: 300px;
+            margin: 0 auto;
+          }
+      
+          /* Form field styles */
+          .form-group {
+            margin-bottom: 20px;
+          }
+      
+          label {
+            display: block;
+            margin-bottom: 5px;
+          }
+      
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
+      
+          button {
+            padding: 10px 20px;
+            color: rgba(255, 228, 196, 0.776);
+            color: #000000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+      
+          button:hover {
+            background-color: rgba(255, 228, 196, 0.776);
+            color: black;
+          }
+
+              /* Board container styles */
+    .board {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+  
+      /* Message styles */
+      .message {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+      }
+  
+      .message h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+      }
+  
+      .message p {
+        margin: 5px 0;
+      }
+nav {
+    text-align: center;
+}
+        
